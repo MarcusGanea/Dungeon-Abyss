@@ -18,7 +18,6 @@ void Player::displayStats() const
               << "Gold: " << gold << "\n"
               << "Gear: " << gear << "\n"
               << "Weapon: " << weapon << "\n"
-              << "Weapon: " << weapon << "\n"
               << "Strength: " << strength << "\n"
               << "Stamina: " << stamina << "\n"
               << "Agility: " << agility << "\n"
@@ -135,7 +134,9 @@ void Player::levelUp()
     intelligence += 10;
     wisdom += 10;
     charisma += 10;
+    std::cout << "*********************************************\n";
     std::cout << "Congratulations! You have reached level " << level << ".\n";
+    std::cout << "*********************************************\n";
 }
 
 void Player::showInventory() const

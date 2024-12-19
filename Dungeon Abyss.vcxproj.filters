@@ -27,10 +27,10 @@
     <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Player.cpp">
+    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Room.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Room.cpp">
+    <ClCompile Include="Player.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

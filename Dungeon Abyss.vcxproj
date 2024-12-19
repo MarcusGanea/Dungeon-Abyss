@@ -131,8 +131,8 @@
     <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Game.cpp" />
     <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Item.cpp" />
     <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\main.cpp" />
-    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Player.cpp" />
     <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Room.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\WMS_Cardiff\Uebungen\Game\Enemy.h" />
