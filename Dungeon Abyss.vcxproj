@@ -127,19 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Enemy.cpp" />
-    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Game.cpp" />
-    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Item.cpp" />
-    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\main.cpp" />
-    <ClCompile Include="..\..\..\WMS_Cardiff\Uebungen\Game\Room.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Room.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\WMS_Cardiff\Uebungen\Game\Enemy.h" />
-    <ClInclude Include="..\..\..\WMS_Cardiff\Uebungen\Game\Game.h" />
-    <ClInclude Include="..\..\..\WMS_Cardiff\Uebungen\Game\Item.h" />
-    <ClInclude Include="..\..\..\WMS_Cardiff\Uebungen\Game\Player.h" />
-    <ClInclude Include="..\..\..\WMS_Cardiff\Uebungen\Game\Room.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Room.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

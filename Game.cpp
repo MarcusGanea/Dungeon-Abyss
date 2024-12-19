@@ -85,7 +85,6 @@ void Game::handleInput(const std::string &input)
     }
     else if (input == "4")
     {
-        std::cout << "Inventory:\n";
         player->showInventory();
         std::cout << "Enter the name of the item to equip: ";
         std::string item;
