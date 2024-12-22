@@ -10,7 +10,7 @@ class Game; // Forward declaration
 class Player
 {
 public:
-    Player(Game &game);
+    Player(Game& game, const std::string& name); // constructor is defined
     void displayStats() const;
     void lookAround() const;
     void attack();
@@ -29,14 +29,16 @@ public:
     void unequipItem();
     void useItem(const std::string &item);
     Game &getGame() const; // Add this method
+    std::string getName() const;
 
 private:
-    Game &game;
+    Game& game;
+    std::string name;
     int health;
     int level;
     int xp;
     int gold;
-    std::vector<std::string> items; // Vector of items
+    std::vector<std::string> items;
     std::string gear;
     std::string weapon;
     int strength;
