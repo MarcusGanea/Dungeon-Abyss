@@ -278,6 +278,9 @@ void BossRoom1::enter(Player &player)
     Room::enter(player);
     if (enemy && enemy->isAlive())
     {
+        std::cout << "*******************************************\n";
+        std::cout << "Ahh, you dare to challenge me, " << player.getName() << "?\n";
+        std::cout << "*******************************************\n";
         std::cout << "Do you want to fight the boss or run away?\n";
         std::string choice;
         std::cin >> choice;
