@@ -244,6 +244,7 @@ void MonsterRoom4::enter(Player &player)
     if (enemy && enemy->isAlive())
     {
         std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
+        std::cout << "Dark Knight:\n";
         std::cout << "You must be " <<player.getName() << "\n";
         std::cout << "I have searched my whole life for a warrior strong enough to match me.\n";
         std::cout << "Prepare for battle!\n";
@@ -259,6 +260,7 @@ void MonsterRoom4::enter(Player &player)
         else if (choice == "run")
         {
             std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
+            std::cout << "Dark Knight:\n";
             std::cout << "YOU COWARD!\n";
             std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
             std::cout << "You ran back to the dungeon entrance.\n";
@@ -287,6 +289,7 @@ void BossRoom1::enter(Player &player)
     if (enemy && enemy->isAlive())
     {
         std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
+        std::cout << "Dragon:\n";
         std::cout << "Ahh, you dare to challenge me, " << player.getName() << "?\n";
         std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
         std::cout << "Do you want to fight the boss or run away?\n";
