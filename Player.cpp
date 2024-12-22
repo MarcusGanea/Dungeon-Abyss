@@ -3,12 +3,13 @@
 #include <iostream>
 #include <algorithm>
 
-Player::Player(Game &game)
-    : game(game), health(100), level(1), xp(0), gold(0), gear("None"), weapon("None"),
-      strength(10), stamina(10), agility(10), intelligence(10), wisdom(10), charisma(10), attackPower(10), maxHealth(100)
+Player::Player(Game& game, const std::string& name)
+    : game(game), name(name), health(100), level(1), xp(0), gold(0), gear("None"), weapon("None"),
+    strength(10), stamina(10), agility(10), intelligence(10), wisdom(10), charisma(10), attackPower(10), maxHealth(100)
 {
     items.clear(); // Clear items vector when a new game starts
 }
+
 
 void Player::displayStats() const
 {
@@ -219,4 +220,9 @@ void Player::useItem(const std::string &item)
 Game &Player::getGame() const
 {
     return game;
+}
+
+std::string Player::getName() const
+{
+	return name;
 }
