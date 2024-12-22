@@ -4,7 +4,10 @@
 
 Game::Game()
 {
-    player = new Player(*this);
+    std::string playerName;
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, playerName);
+    player = new Player(*this, playerName);
     initializeRooms();
     currentRoom = rooms[0];
 }
@@ -12,7 +15,7 @@ Game::Game()
 Game::~Game()
 {
     delete player;
-    for (Room *room : rooms)
+    for (Room* room : rooms)
     {
         delete room;
     }
@@ -59,7 +62,7 @@ void Game::showMenu()
     std::cout << "Enter your choice: ";
 }
 
-void Game::handleInput(const std::string &input)
+void Game::handleInput(const std::string& input)
 {
     if (input == "1")
     {
@@ -132,10 +135,14 @@ void Game::gameOver()
     if (choice == "1")
     {
         delete player;
-        player = new Player(*this);
+        std::string playerName;
+        std::cout << "Enter your name: ";
+        std::cin.ignore();
+        std::getline(std::cin, playerName);
+        player = new Player(*this, playerName);
 
         // Clear and delete old rooms
-        for (Room *room : rooms)
+        for (Room* room : rooms)
         {
             delete room;
         }
@@ -186,8 +193,7 @@ void Game::displayIntro() const
     std::cin.get();
 }
 
-void Game::displayOutro()
-{
+void Game::displayOutro() {
     std::cout << R"(
                             ,-.
        ___,---.__          /'|`\          __,---,___
@@ -208,7 +214,7 @@ void Game::displayOutro()
              `-._,-'   `-._______,-'   `-._,-'
     )" << std::endl;
 
-    std::cout << "Thanks For Playing My Game!\n";
+    std::cout << "Thanks For Playing My Game, " << player->getName() << "!\n";
     std::cout << "Credits:\n";
     std::cout << "Game Developed by: Marcus Ganea\n";
     std::cin.ignore();
@@ -216,7 +222,7 @@ void Game::displayOutro()
     gameOver();
 }
 
-Room *Game::getCurrentRoom() const
+Room* Game::getCurrentRoom() const
 {
     return currentRoom;
 }
