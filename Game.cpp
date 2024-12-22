@@ -189,7 +189,7 @@ void Game::displayIntro() const
     std::cout << "Dungeon Abyss\n";
     std::cout << "Game Developed by: Marcus Ganea\n";
     std::cout << "Press Enter to start the game...";
-    std::cin.ignore();
+    std::cout << "\n\n";
     std::cin.get();
 }
 
