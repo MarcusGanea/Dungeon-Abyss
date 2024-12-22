@@ -85,7 +85,7 @@ class BossRoom1 : public Room
 {
 public:
     BossRoom1();
-    void enter(Player &player) override;
+    void enter(Player& player) override;
     void lookAround() const override;
 };
 
