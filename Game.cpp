@@ -217,6 +217,7 @@ void Game::displayOutro() {
     std::cout << "Thanks For Playing My Game, " << player->getName() << "!\n";
     std::cout << "Credits:\n";
     std::cout << "Game Developed by: Marcus Ganea\n";
+    std::cout << "Story by: Marcus Ganea\n";
     std::cin.ignore();
     std::cin.get();
     gameOver();
