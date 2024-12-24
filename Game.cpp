@@ -107,7 +107,7 @@ void Game::handleInput(const std::string& input)
     {
         std::cout << "Inventory: \n";
         player->showInventory();
-        std::cout << "Enter the name of the item to use: ";
+        std::cout << "Enter the name of the item to use:  ";
         std::string item;
         std::cin.ignore();
         std::getline(std::cin, item);
