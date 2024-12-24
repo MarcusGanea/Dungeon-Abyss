@@ -48,7 +48,7 @@ void Game::initializeRooms()
 
 void Game::showMenu()
 {
-    std::cout << "=====================\n";
+    std::cout << "======================\n";
     std::cout << "Menu:\n";
     std::cout << "1. Look Around\n";
     std::cout << "2. Move to another room\n";
@@ -58,7 +58,7 @@ void Game::showMenu()
     std::cout << "6. Show Inventory\n";
     std::cout << "7. Use Item\n";
     std::cout << "8. Quit\n";
-    std::cout << "=====================\n";
+    std::cout << "======================\n";
     std::cout << "Enter your choice: ";
 }
 
@@ -105,7 +105,7 @@ void Game::handleInput(const std::string& input)
     }
     else if (input == "7")
     {
-        std::cout << "Inventory:\n";
+        std::cout << "Inventory: \n";
         player->showInventory();
         std::cout << "Enter the name of the item to use: ";
         std::string item;
