@@ -128,7 +128,7 @@ void TreasureRoom2::lookAround() const
     Room::lookAround();
 }
 
-MonsterRoom::MonsterRoom() : Room("Dungeon room 0_2 -Goblin Den", "You sense a dark and foul smell. Maybe you should turn around while you can.")
+MonsterRoom::MonsterRoom() : Room("Dungeon room 0_2 -Goblin Den", "You sense a dark and foul smell. On the ground are rotting corpses of other adventurers. Maybe you should turn around while you can.")
 {
     enemy = new Enemy("Goblin", 30, 5);
 }
