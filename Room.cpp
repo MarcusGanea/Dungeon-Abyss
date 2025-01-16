@@ -233,7 +233,7 @@ void MonsterRoom3::lookAround() const
     Room::lookAround();
 }
 
-MonsterRoom4::MonsterRoom4() : Room("Dungeon room 0_7 - Knight's Room", "You see what must be hundreds of fallen warriors, this was a strong foe.")
+MonsterRoom4::MonsterRoom4() : Room("Dungeon room 0_7 - Knight's Room", "You see what must be hundreds of fallen warriors, this was truly a strong foe.")
 {
     enemy = new Enemy("Dark Knight", 70, 15);
 }
@@ -272,6 +272,7 @@ void MonsterRoom4::enter(Player &player)
         }
     }
 }
+
 
 void MonsterRoom4::lookAround() const
 {
