@@ -261,7 +261,7 @@ void MonsterRoom4::enter(Player &player)
         {
             std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
             std::cout << "Dark Knight:\n";
-            std::cout << "YOU COWARD!\n";
+            std::cout << "YOU COWARD!\nFIGHT ME!\n";
             std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
             std::cout << "You ran back to the dungeon entrance.\n";
             player.getGame().setCurrentRoom(0);
