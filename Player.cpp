@@ -11,7 +11,7 @@ Player::Player(Game& game, const std::string& name)
 }
 
 
-void Player::displayStats() const
+void Player::displayStats() const //this displays all your atats
 {
     std::cout << "Health: " << health << "\n"
               << "Level: " << level << "\n"
